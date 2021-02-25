@@ -4,15 +4,34 @@
 
     .todo {
       display: flex;
+      justify-content: space-between;
       align-items: center;
       width: 60%;
       margin: 0 auto;
-      cursor: pointer;
 
-      p {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 500;
-        font-size: 18px;
+      .left {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        p {
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 500;
+          font-size: 18px;
+        }
+      }
+
+      .right {
+
+        button {
+          background: none;
+          border: none;
+          color: #BDBDBD;
+
+          &:hover {
+            color: #d30c0cee;
+          }
+        }
       }
     }
   }

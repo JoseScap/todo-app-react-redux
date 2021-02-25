@@ -28,13 +28,26 @@
 }
 .todos .container .todo {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   width: 60%;
   margin: 0 auto;
+}
+.todos .container .todo .left {
+  display: flex;
+  align-items: center;
   cursor: pointer;
 }
-.todos .container .todo p {
+.todos .container .todo .left p {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 18px;
+}
+.todos .container .todo .right button {
+  background: none;
+  border: none;
+  color: #BDBDBD;
+}
+.todos .container .todo .right button:hover {
+  color: #d30c0cee;
 }

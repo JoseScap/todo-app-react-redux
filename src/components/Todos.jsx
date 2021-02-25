@@ -10,17 +10,17 @@ const Todos = () => {
       <div className="container">
         {
           todos.map((todo, i) => ( tab === 1 && (
-            <Todo todo={todo} key={i}/>
+            <Todo todo={todo} tab={tab} key={i}/>
           )))
         }
         {
           todos.map((todo, i) => (tab === 2 && !todo.done && (
-            <Todo todo={todo} key={i}/>
+            <Todo todo={todo} tab={tab} key={i}/>
           )))
         }
         {
           todos.map((todo, i) => (tab === 3 && todo.done && (
-            <Todo todo={todo} key={i}/>
+            <Todo todo={todo} tab={tab} key={i}/>
           )))
         }
       </div>

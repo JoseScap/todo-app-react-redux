@@ -2,6 +2,7 @@ import Layout from './components/Layout';
 
 import './css/fonts.css';
 import './css/bootstrap.min.css';
+import './css/icons.css';
 import './css/style.css';
 
 function App() {
