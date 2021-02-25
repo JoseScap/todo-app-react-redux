@@ -13,6 +13,11 @@ const Input = () => {
     setTodo(event.target.value);
   };
 
+  const handleAddTodo = () => {
+    dispatch(addTodo(todo))
+    setTodo("");
+  }
+
   return tab !== 3 ? (
     <div className="input">
       <div className="container my-3">
@@ -23,7 +28,7 @@ const Input = () => {
             value={todo}
             onChange={handleChangeTodo}
           />
-          <button onClick={() => dispatch(addTodo(todo))}>Add</button>
+          <button onClick={() => handleAddTodo()}>Add</button>
         </div>
       </div>
     </div>
