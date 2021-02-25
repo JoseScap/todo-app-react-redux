@@ -26,3 +26,15 @@
   color: #2F80ED;
   border-bottom: 3px solid #2F80ED;
 }
+.todos .container .todo {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.todos .container .todo p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}

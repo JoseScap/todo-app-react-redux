@@ -1,4 +1,5 @@
-import Header from './components/Header.jsx';
+import Header from './components/Header';
+import Todos from './components/Todos';
 
 import './css/fonts.css';
 import './css/bootstrap.min.css';
@@ -8,6 +9,7 @@ function App() {
   return (
     <div>
       <Header />
+      <Todos />
     </div>
   );
 }
