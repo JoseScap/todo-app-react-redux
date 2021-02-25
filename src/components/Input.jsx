@@ -7,10 +7,15 @@ const Input = () => {
 
   const tab = useSelector((state) => state.tabs.tab);
 
-  const [todo, setTodo] = useState("");
+  const [todo, setTodo] = useState(window.localStorage.getItem("todo"));
 
   const handleChangeTodo = (event) => {
-    setTodo(event.target.value);
+    try {
+      setTodo(event.target.value);
+      window.localStorage.setItem("todo", event.target.value);
+    } catch (error) {
+      console.error(error);
+    }
   };
 
   const handleAddTodo = () => {
