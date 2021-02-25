@@ -10,17 +10,14 @@ const Input = () => {
   const [todo, setTodo] = useState(window.localStorage.getItem("todo"));
 
   const handleChangeTodo = (event) => {
-    try {
-      setTodo(event.target.value);
-      window.localStorage.setItem("todo", event.target.value);
-    } catch (error) {
-      console.error(error);
-    }
+    setTodo(event.target.value);
   };
 
   const handleAddTodo = () => {
-    dispatch(addTodo(todo))
-    setTodo("");
+    if (todo.length > 0) {
+      dispatch(addTodo(todo))
+      setTodo("");
+    }
   }
 
   return tab !== 3 ? (
