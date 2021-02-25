@@ -15,6 +15,10 @@ const initialState = {
 
 function tasks(state = initialState, action = null) {
   switch (action.type) {
+    case 'ADD_TODO':
+      return {
+        todos: [...state.todos, action.payload]
+      }
     case 'TOGGLE_DONE':
       let index = state.todos.findIndex(e => e.id === action.payload);
 
