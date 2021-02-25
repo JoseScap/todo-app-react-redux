@@ -35,6 +35,12 @@ function tasks(state = initialState, action = null) {
       return {
         todos: [...filtered]
       }
+    case 'DELETE_ALL': 
+      let doing = state.todos.filter(e => !e.done);
+
+      return {
+        todos: [...doing]
+      }
     default:
       return state;
   }

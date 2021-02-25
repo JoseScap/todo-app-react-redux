@@ -11,3 +11,7 @@ export function toggleDone(id) {
 export function deleteTodo(id) {
   return { type: 'DELETE_TODO', payload: id }
 }
+
+export function deleteAll() {
+  return { type: 'DELETE_ALL' }
+}

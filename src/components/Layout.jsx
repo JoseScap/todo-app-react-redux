@@ -1,6 +1,7 @@
 import Header from './Header';
 import Input from './Input';
 import Todos from './Todos';
+import DeleteAll from './DeleteAll';
 import { Fragment } from 'react';
 
 const Layout = () => {
@@ -9,6 +10,7 @@ const Layout = () => {
       <Header />
       <Input />
       <Todos />
+      <DeleteAll />
     </Fragment>
   );
 }
