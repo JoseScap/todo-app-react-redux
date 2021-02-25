@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux';
-import { toggleDone } from './../redux/actions/todos';
+import { toggleDone, deleteTodo } from './../redux/actions/todos';
 
 const Todo = ({todo, tab}) => {
   const dispatch = useDispatch();
@@ -13,7 +13,7 @@ const Todo = ({todo, tab}) => {
       {
         todo.done && tab === 3 && (
           <div className="right">
-            <button>
+            <button onClick={() => dispatch(deleteTodo(todo.id))}>
               <span class="material-icons">
                 delete_outline
               </span>

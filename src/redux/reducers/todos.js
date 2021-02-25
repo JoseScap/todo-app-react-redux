@@ -23,9 +23,14 @@ function tasks(state = initialState, action = null) {
       todos[index].done = !todos[index].done
 
       return {
-        ...state,
         todos
       };
+    case 'DELETE_TODO':
+      let filtered = state.todos.filter(e => e.id !== action.payload);
+
+      return {
+        todos: [...filtered]
+      }
     default:
       return state;
   }
