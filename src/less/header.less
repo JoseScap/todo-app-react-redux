@@ -1,0 +1,37 @@
+.header {
+  
+  .container {
+
+    .title {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 700;
+      font-size: 36px;
+    }
+  
+    .tabs {
+      display: flex;
+      justify-content: space-around;
+      width: 60%;
+      min-width: 500px;
+      margin: 0 auto;
+      border-bottom: 1px solid #BDBDBD;
+
+      button {
+        width: 90px;
+        background: none;
+        border: none;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        transition: all ease-in-out .3s;
+        border-bottom: 3px solid #FFFFFF;
+        padding: 0 0 8px 0;
+
+        &.active {
+          color: #2F80ED;
+          border-bottom: 3px solid #2F80ED;
+        }
+      }
+    }
+  }
+}
