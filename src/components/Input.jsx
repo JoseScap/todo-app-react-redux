@@ -20,6 +20,13 @@ const Input = () => {
     }
   }
 
+  const handlePressEnter = (event) => {
+    if (event.key === 'Enter') {
+      dispatch(addTodo(todo))
+      setTodo("");
+    }
+  }
+
   return tab !== 3 ? (
     <div className="input">
       <div className="container my-3">
@@ -29,6 +36,7 @@ const Input = () => {
             placeholder="E.g. Do my homework."
             value={todo}
             onChange={handleChangeTodo}
+            onKeyPress={handlePressEnter}
           />
           <button onClick={() => handleAddTodo()}>Add</button>
         </div>
