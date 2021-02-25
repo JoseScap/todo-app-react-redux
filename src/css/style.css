@@ -35,12 +35,13 @@
 }
 .input .container .input-wrapper input {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 14px;
   padding: 20px 12px;
   border: 1px solid #BDBDBD;
   border-radius: 12px;
   width: 540px;
+  color: #828282;
 }
 .input .container .input-wrapper input:focus {
   outline: none;
