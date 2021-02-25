@@ -75,6 +75,10 @@
   font-weight: 500;
   font-size: 18px;
 }
+.todos .container .todo .left p.done {
+  text-decoration: line-through;
+  color: #888888;
+}
 .todos .container .todo .right button {
   background: none;
   border: none;

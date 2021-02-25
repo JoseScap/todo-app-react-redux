@@ -8,7 +8,7 @@ const Todo = ({todo, tab}) => {
     <div className="todo mt-3">
       <div className="left" onClick={() => dispatch(toggleDone(todo.id)) }>
         <input type="checkbox" checked={todo.done}/>
-        <p className="m-0 mx-2">{todo.task}</p>
+        <p className={todo.done ? "m-0 mx-2 done" : "m-0 mx-2"}>{todo.task}</p>
       </div>
       {
         todo.done && tab === 3 && (
